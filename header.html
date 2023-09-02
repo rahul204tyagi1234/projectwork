@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <title>header</title>
   </head>
 
@@ -14,7 +14,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="STUDENT-PORTAL.png"
+            src="img/STUDENT-PORTAL.png"
             alt=""
             width="50"
             height="50"
@@ -44,25 +44,22 @@
     <div class="row">
       <!-- Notifications Area Start  -->
       <div class="col-md-3">
-        <div class="card" style="width: 25rem; height: 750px;">
+        <div class="card" style="width: 25rem; height: 750px">
           <div
-          class="card-header text-center"
-          style="background-color: rgb(170, 244, 244)"
+            class="card-header text-center"
+            style="background-color: rgb(170, 244, 244)"
           >
-          <h5>Notifications</h5>
-            
-              
-            
+            <h5>Notifications</h5>
           </div>
-          
+
           <marquee
             behavior="scroll"
             direction="up"
             onmouseover="this.stop();"
             onmouseout="this.start()"
           >
-          <ul class="list-group list-grohup-flush" >
-            <!-- <li class="list-group-item"></li>
+            <ul class="list-group list-grohup-flush">
+              <!-- <li class="list-group-item"></li>
             <li class="list-group-item"></li> -->
             </ul>
             <!-- <ul class="list-group list-group-flush" id="result">             
@@ -73,67 +70,73 @@
       </div>
       <div class="col-md-9">
         <div class="row">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <!-- <div class="carousel-indicators">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div> -->
-          <div class="carousel-inner" style="max-width: 35cm">
-            <!-- <div id="cr-1" class="carousel-item active">
+            <div class="carousel-inner" style="max-width: 35cm ">
+               <!-- <div id="cr-1" class="carousel-item active">
               <img
-                src="Screenshot from 2023-08-29 18-03-45.png"
+                src="img/Screenshot from 2023-08-29 18-03-45.png"
+                class="carousel-inner"
+                alt="..."
+              />
+            </div>
+              <div id="cr-2" class="carousel-item">
+              <img
+                src="img/Screenshot from 2023-08-29 18-04-31.png"
+                class="carousel-inner"
+                alt="..."
+              />
+            </div>
+              <div id="cr-3" class="carousel-item">
+              <img
+                src="img/Screenshot from 2023-08-29 18-05-21.png"
                 class="carousel-inner"
                 alt="..."
               />
             </div> -->
-            <!-- <div id="cr-2" class="carousel-item">
-              <img
-                src="Screenshot from 2023-08-29 18-04-31.png"
-                class="carousel-inner"
-                alt="..."
-              />
-            </div> -->
-            <!-- <div id="cr-3" class="carousel-item">
-              <img
-                src="Screenshot from 2023-08-29 18-05-21.png"
-                class="carousel-inner"
-                alt="..."
-              />
-            </div> -->
+            </div>
+            <button
+              onclick="backCrowsel()"
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              onclick="nextCrowsel()"
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            onclick="backCrowsel()"
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            onclick="nextCrowsel()"
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
         </div>
         <br />
         <div class="card mb-12" style="max-width: fit-content">
           <div class="row g-0">
             <div class="col-md-4">
               <img
-                src="Screenshot from 2023-08-29 17-58-46.png"
+                src="img/Screenshot from 2023-08-29 16-44-45.png"
                 class="img-fluid rounded-start"
                 alt="..."
               />
@@ -184,7 +187,7 @@
             </div>
             <div class="col-md-4">
               <img
-                src="Screenshot from 2023-08-29 16-46-42.png"
+                src="img/Screenshot from 2023-08-29 16-46-42.png"
                 class="img-fluid rounded-start"
                 alt="..."
               />
@@ -192,37 +195,6 @@
           </div>
         </div>
         <br />
-
-        <div class="card mb-12" style="max-width: fit-content">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="Screenshot from 2023-08-29 17-58-46.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
