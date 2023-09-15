@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Add Bootstrap CSS link here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar fixed-top" style="background-color: rgb(170, 244, 244)">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg fixed-top"style="background-color: rgb(170, 244, 244)">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
             <img
               src="img/STUDENT-PORTAL.png"
               alt=""
@@ -19,51 +20,25 @@
             />
             Student portal
           </a>
-          
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="login.html"
-                >Login</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registration.html">Registration</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-md-3" href="contactus.html">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </nav><br><br><br><br>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/STUDENT-PORTAL.png" alt="Logo" width="50" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" id="navbarToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="registration.html">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script src="javascript/tyest js"></script>
 </body>
 </html>
+

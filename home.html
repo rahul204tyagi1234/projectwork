@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <title>header</title>
+    <title>Home</title>
   </head>
 
   <body style="background-color: rgb(215, 229, 229)">
@@ -38,13 +38,13 @@
         </ul>
       </div>
     </nav>
-    <br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
     <!-- Navbar End  -->
 
     <div class="row">
       <!-- Notifications Area Start  -->
       <div class="col-md-3">
-        <div class="card" style="width: 25rem; height: 750px">
+        <div class="card" style="max-width: 35cm">
           <div
             class="card-header text-center"
             style="background-color: rgb(170, 244, 244)"
@@ -55,13 +55,14 @@
           <marquee
             behavior="scroll"
             direction="up"
-            onmouseover="this.stop();"
+            onload="this.start()"
+            onmouseover="this.stop()"
             onmouseout="this.start()"
           >
             <ul class="list-group list-grohup-flush">
               <!-- <li class="list-group-item"></li>
             <li class="list-group-item"></li> -->
-            </ul>
+            <!-- </ul> -->
             <!-- <ul class="list-group list-group-flush" id="result">             
             </ul> -->
           </marquee>
@@ -80,7 +81,7 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div> -->
-            <div class="carousel-inner" style="max-width: 35cm;">
+            <div class="carousel-inner" style="max-width: 35cm">
               <!-- <div id="cr-1" class="carousel-item active">
               <img
                 src="img/Screenshot from 2023-08-29 18-03-45.png"
@@ -128,13 +129,13 @@
           </div>
         </div>
         <br />
-        <div class="card mb-12"id="cardImg" style="max-width: fit-content">
-          <div class="row g-0">
-            <div  class="col-md-4">
-              <!-- <div  class="card-body">
+        <div class="card mb-12" style="max-width: 35cm">
+          <div id="cardImg" class="row g-0">
+            <!-- <div  class="col-md-4"> -->
+            <!-- <div  class="card-body">
 
               </div> -->
-              <!-- <img
+            <!-- <img
                 src="img/Screenshot from 2023-08-29 16-44-45.png"
                 class="img-fluid rounded-start"
                 alt="..."
@@ -142,30 +143,30 @@
             <!-- </div>  
             <div class="col-md-8">
               <div class="card-body"> -->
-                <!-- <h5 class="card-title">Card title</h5> -->
-                <!-- <p class="card-text">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p> -->
-                <!-- <p class="card-text">
+            <!-- <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p> -->
 
-                <!-- <p class="card-text">
+            <!-- <p class="card-text">
                   <small class="text-muted">Last updated 3 mins ago</small>
                 </p> -->
-              </div>
-            </div>
+            <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
         <br />
 
-        <!-- <div class="card mb-12" style="max-width: fit-content">
-          <div class="row g-0">
-            <div class="col-md-8">
+        <div class="card mb-12"  style="max-width: 35cm">
+         <div id="cardImg2" class="row g-0">
+             <!-- <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -189,10 +190,10 @@
                 src="img/Screenshot from 2023-08-29 16-46-42.png"
                 class="img-fluid rounded-start"
                 alt="..."
-              />
-            </div>
-          </div>
-        </div> -->
+                />
+              </div>-->
+            </div> 
+        </div>
         <br />
       </div>
     </div>
@@ -210,6 +211,7 @@
     <!-- <footer class="footer"></footer> -->
     <!-- Footer Area End  -->
     <!-- Javascript Script Start  -->
+    <script src="javascript/secondinformation.js"></script>
     <script src="/javascript/information.js"></script>
     <script src="/javascript/carusel.js"></script>
     <script src="/javascript/notification.js"></script>
