@@ -1,11 +1,11 @@
 const footer = document.getElementById("footer");
 
-setTimeout(()=>{
+// setTimeout(()=>{
     fetch("footer.html")
   .then((res) => res.text())
-  .then((data) => {
-    // console.log("vbbbbbbbbbbb===========" ,data)
-    footer.innerHTML = data;
+  .then((datas) => {
+    console.log("vbbbbbbbbbbb===========" ,datas)
+    footer.innerHTML = datas;
   });
 
-},100);
+// },100);
