@@ -1,11 +1,8 @@
 const footer = document.getElementById("footer");
 
-// setTimeout(()=>{
-    fetch("footer.html")
+fetch("footer.html")
   .then((res) => res.text())
-  .then((datas) => {
-    console.log("vbbbbbbbbbbb===========" ,datas)
-    footer.innerHTML = datas;
+  .then((data) => {
+    footer.innerHTML = data;
   });
 
-// },100);

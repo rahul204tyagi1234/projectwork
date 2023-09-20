@@ -6,7 +6,7 @@
     <title>Responsive Navbar</title>
     <!-- Add Bootstrap CSS link here -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- <header id="header"></header> -->
@@ -33,20 +33,26 @@
           id="navbarNav"
         >
           <ul class="navbar-nav ml-auto" id="ul">
-            <li id="loginBtn" class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" onclick="showLogin('/login.html')">Login</a>
             </li>
-            <li id="registrationBtn" class="nav-item">
-              <a class="nav-link" href="registration.html">Registration</a>
+            <li  class="nav-item">
+              <a id="registrationBtn" class="nav-link" href="javascript:void(login.html)" onclick="showregistration('/registration.html')">Registration</a>
             </li>
-            <li id="contact us" class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+            <li  class="nav-item">
+              <a id="contact us" class="nav-link" href= "javascript:void(contactus.html)" onclick="showcontactus('/contactus.html')">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div id="login-page"></div>
+    <div id="registration-page"></div>
+    <div id="contactus-page"></div>
+    <footer id="footer"></footer>
     <script src="javascript/header.js"></script>
+    <script src="javascript/registration.js"></script>
+    <!-- <script src="javascript/footer.js"></script> -->
   </body>
 </html>

@@ -1,7 +1,7 @@
 let idofRegistration = 1; 
 let storeRegistrationData = [];
 
-function rangData (name, fathername, email, password,confirmpassword,Address, mobileNum,AdharNum, ){
+function rangData (name, fathername, email, password,confirmpassword,Address, mobileNum,AdharNum){
     this.id = idofRegistration,
     this.name = name,
     this.fathername = fathername,
@@ -26,14 +26,15 @@ createRegData = () =>{
     var mobileNum = document.getElementById('mobilefeild').value;
     var AdharNum = document.getElementById('AdharFeild').value;
 
-    newRegistrationData = new regData(name, fathername, email, password, confirmpassword, Address, mobileNum, AdharNum);
+    newRegistrationData = new rangData(name, fathername, email, password,confirmpassword,Address, mobileNum,AdharNum);
 
 
     storeRegistrationData.push(newRegistrationData);
+    // console.log(storeRegistrationData, "Array Data");
 
 
     localStorage.setItem("local Data",JSON.stringify(storeRegistrationData));
-    console.log(storeRegistrationData, "Array Data");
+    // console.log(storeRegistrationData, "Array Data");
 
     idofRegistration++ ;
     

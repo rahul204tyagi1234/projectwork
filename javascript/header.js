@@ -14,18 +14,57 @@ setTimeout(() => {
   });
 }, 50);
 
-setTimeout(() => {
- document.getElementById("loginBtn");
-  // console.log('login :',login)
-  document.addEventListener("click", function () {
-    document.getElementById("loginBtn").classList.add("hideAnchor");
-    document.getElementById("registrationBtn").classList.remove("hideAnchor");
-    document.getElementById("contact us").classList.remove("hideAnchor");
-  });
-  
-}, 50);
-// document.getElementById("registrationBtn").addEventListener("click", function () {
-//     document.getElementById("loginForm").classList.add("hidden");
-//     document.getElementById("registrationForm").classList.remove("hidden");
-//     document.getElementById("contactUsPage").classList.add("hidden");
-// });
+function hideLogin() {
+  var elm = document.getElementById("login");
+  elm.classList.add("hideAnchor");
+}
+
+// setTimeout(() => {
+//  var elm= document.getElementById("login");
+//   console.log('login :',login)
+//   elm.addEventListener('click',()=>{
+//     elm.classList.add('hideAnchor')
+//   })
+// }, 500);
+
+// setTimeout(() => {
+//   document.getElementById("registrationBtn");
+//    // console.log('login :',login)
+//    document.addEventListener("click", function () {
+//      document.getElementById("registrationBtn").classList.add("hideAnchor");
+//     //  document.getElementById("registrationBtn").classList.remove("hideAnchor");
+//     //  document.getElementById("contact us").classList.remove("hideAnchor");
+//    });
+
+//  }, 50);
+
+function showLogin(url) {
+  const showLoginPage = document.getElementById("login-page");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showLoginPage.innerHTML = data;
+    });
+}
+
+
+function showregistration(url) {
+  const showLoginPage = document.getElementById("registration-page");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showLoginPage.innerHTML = data;
+    });
+}
+
+function showcontactus(url) {
+  const showLoginPage = document.getElementById("contactus-page");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showLoginPage.innerHTML = data;
+    });
+}
