@@ -19,25 +19,6 @@ function hideLogin() {
   elm.classList.add("hideAnchor");
 }
 
-// setTimeout(() => {
-//  var elm= document.getElementById("login");
-//   console.log('login :',login)
-//   elm.addEventListener('click',()=>{
-//     elm.classList.add('hideAnchor')
-//   })
-// }, 500);
-
-// setTimeout(() => {
-//   document.getElementById("registrationBtn");
-//    // console.log('login :',login)
-//    document.addEventListener("click", function () {
-//      document.getElementById("registrationBtn").classList.add("hideAnchor");
-//     //  document.getElementById("registrationBtn").classList.remove("hideAnchor");
-//     //  document.getElementById("contact us").classList.remove("hideAnchor");
-//    });
-
-//  }, 50);
-
 function showLogin(url) {
   const showLoginPage = document.getElementById("login-page");
   console.log();
@@ -50,21 +31,30 @@ function showLogin(url) {
 
 
 function showregistration(url) {
-  const showLoginPage = document.getElementById("registration-page");
+  const showRegistrationPage = document.getElementById("registration-page");
   console.log();
   fetch(url)
     .then((res) => res.text())
     .then((data) => {
-      showLoginPage.innerHTML = data;
+      showRegistrationPage.innerHTML = data;
     });
 }
 
 function showcontactus(url) {
-  const showLoginPage = document.getElementById("contactus-page");
+  const showcontactusPage = document.getElementById("contactus-page");
   console.log();
   fetch(url)
     .then((res) => res.text())
     .then((data) => {
-      showLoginPage.innerHTML = data;
+      showcontactusPage.innerHTML = data;
+    });
+}
+function showHomePage(url) {
+  const showHomePage = document.getElementById("home-page");
+  // console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showHomePage.innerHTML = data;
     });
 }
