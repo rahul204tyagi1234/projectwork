@@ -20,7 +20,7 @@ function hideLogin() {
 }
 
 function showLogin(url) {
-  const showLoginPage = document.getElementById("login-page");
+  const showLoginPage = document.getElementById("all-pages");
   console.log();
   fetch(url)
     .then((res) => res.text())
@@ -31,7 +31,7 @@ function showLogin(url) {
 
 
 function showregistration(url) {
-  const showRegistrationPage = document.getElementById("registration-page");
+  const showRegistrationPage = document.getElementById("all-pages");
   console.log();
   fetch(url)
     .then((res) => res.text())
@@ -41,7 +41,7 @@ function showregistration(url) {
 }
 
 function showcontactus(url) {
-  const showcontactusPage = document.getElementById("contactus-page");
+  const showcontactusPage = document.getElementById("all-pages");
   console.log();
   fetch(url)
     .then((res) => res.text())
@@ -50,7 +50,7 @@ function showcontactus(url) {
     });
 }
 function showHomePage(url) {
-  const showHomePage = document.getElementById("home-page");
+  const showHomePage = document.getElementById("all-pages");
   // console.log();
   fetch(url)
     .then((res) => res.text())

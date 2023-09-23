@@ -8,7 +8,7 @@
 
 
   function showresult(url) {
-    const showresultPage = document.getElementById("result");
+    const showresultPage = document.getElementById("profile");
     console.log();
     fetch(url)
       .then((res) => res.text())

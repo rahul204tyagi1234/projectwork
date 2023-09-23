@@ -1,5 +1,5 @@
 function showrpayment(url) {
-    const showpaymentPage = document.getElementById("payment");
+    const showpaymentPage = document.getElementById("profile");
     console.log();
     fetch(url)
       .then((res) => res.text())

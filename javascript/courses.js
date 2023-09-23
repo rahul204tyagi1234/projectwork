@@ -1,5 +1,5 @@
 function showCourses(url) {
-    const showCoursesPage = document.getElementById("courses");
+    const showCoursesPage = document.getElementById("profile");
     console.log();
     fetch(url)
       .then((res) => res.text())
