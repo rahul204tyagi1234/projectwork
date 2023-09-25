@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Dasboard</title>
   </head>
   <body style="background-color: rgb(215, 229, 229)">
@@ -13,7 +14,7 @@
       style="background-color: rgb(170, 244, 244)"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">
+        <a class="navbar-brand" href="javascript:void(0)">
           <img
             src="img/STUDENT-PORTAL.png"
             alt=""
@@ -38,6 +39,7 @@
 
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"onclick="showProfile('/profile.html')" class="rounded-circle" style="width: 50px;"
                  alt="Avatar" />
+                 
                 
             </li>
            
@@ -59,11 +61,13 @@
         <div class="col-md-3">
           <div class="card" style="width: auto">
             <div class="card-header text-center" style="background-color: rgb(170, 244, 244)"><b>Options</b></div>
-            <ul class="list-group list-group-flush">
+            <!-- <div id="show"> -->
+             <ul class="list-group list-group-flush">
+              <div id="show">
               <li class="list-group-item"> 
                 <a class="nav-link " href="javascript:void(0)" onclick="showCourses('/courses.html')">Courses</a>
               </li>
-              <li class="list-group-item"> 
+              <li class="list-group-item active"> 
                 <a class="nav-link" href="javascript:void(0)" onclick="showProfile('/profile.html')">Profile</a>
               </li>
               <li class="list-group-item"> 
@@ -72,7 +76,9 @@
               <li class="list-group-item"> 
                 <a class="nav-link" href="javascript:void(0)" onclick="showresult('/result.html')">Result</a>
               </li>
-            </ul>
+            </div>
+             </ul>
+          
           </div>
         </div>
 

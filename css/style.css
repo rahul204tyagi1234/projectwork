@@ -1,4 +1,4 @@
-.hideAnchor{
+/* .hideAnchor{ */
     /* position: absolute;
     top: 0;
     right: 0;
@@ -6,5 +6,10 @@
     left: 0;
     z-index: 1;
     content: ""; */
-    display: none;
-}
+    /* display: none;
+} */
+
+/* .active, .btn:hover {
+    background-color:blue;
+    color: white;
+  } */

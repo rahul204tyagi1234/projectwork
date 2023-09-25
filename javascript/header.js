@@ -1,9 +1,9 @@
-const nav = document.getElementById("header");
+const navElement = document.getElementById("header");
 
 fetch("header.html")
   .then((res) => res.text())
   .then((data) => {
-    nav.innerHTML = data;
+    navElement.innerHTML = data;
   });
 
 setTimeout(() => {
