@@ -1,3 +1,5 @@
+
+// window.onload = showCourses(url);
 function logOut() {
     let logOut = document.getElementById('logout')
     // console.log(logOut.length,"length")
@@ -13,8 +15,9 @@ function logOut() {
     })
 }
 
-var header = document.getElementById("show");
-var btns = header.getElementsByClassName("list-group-item");
+// var header = document.getElementById("show");
+var btns = document.getElementsByClassName("list-group-item");
+
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");

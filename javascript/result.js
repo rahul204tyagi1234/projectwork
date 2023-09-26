@@ -9,7 +9,7 @@
 
   function showresult(url) {
     const showresultPage = document.getElementById("profile");
-    console.log();
+    // console.log();
     fetch(url)
       .then((res) => res.text())
       .then((data) => {

@@ -26,6 +26,9 @@ createRegData = () =>{
     var address = document.getElementById('address').value;
     // var mobileNum = document.getElementById('mobilefeild').value;
     // var adharNum = document.getElementById('AdharFeild').value;
+    if( password!==confirmpassword){
+        alert("your password and confirmpassword is not matching ")
+    }
 
     newRegistrationData = new rangData(name, lastName, email, password,confirmpassword,address);
 
@@ -36,8 +39,8 @@ createRegData = () =>{
 
     localStorage.setItem("userData",JSON.stringify(storeRegistrationData));
     // console.log(storeRegistrationData, "Array Data");
-    window.location.href = "login.html";
+    // window.location.href = "";
 
-    idofRegistration++ ;
+    idofRegistration++;
     
 }
