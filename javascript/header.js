@@ -14,10 +14,10 @@ setTimeout(() => {
   });
 }, 50);
 
-function hideLogin() {
-  var elm = document.getElementById("login");
-  elm.classList.add("hideAnchor");
-}
+// function hideLogin() {
+//   var elm = document.getElementById("login");
+//   elm.classList.add("hideAnchor");
+// }
 
 function showLogin(url) {
   const showLoginPage = document.getElementById("all-pages");
@@ -38,6 +38,8 @@ function showregistration(url) {
     .then((data) => {
       showRegistrationPage.innerHTML = data;
     });
+    // document.getElementById("myBtn").disabled = true;
+    
 }
 
 function showcontactus(url) {
