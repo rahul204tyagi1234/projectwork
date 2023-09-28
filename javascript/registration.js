@@ -9,8 +9,6 @@ function rangData(name, lastName, email, password, confirmpassword, address) {
     (this.password = password),
     (this.confirmpassword = confirmpassword),
     (this.address = address),
-    // this.mobileNum = mobileNum,
-    // this.adharNum = adharNum,
     (this.isLogin = false);
 }
 
@@ -21,25 +19,16 @@ createRegData = () => {
   var password = document.getElementById("password").value;
   var confirmpassword = document.getElementById("confirmPassword").value;
   var address = document.getElementById("address").value;
-  // var mobileNum = document.getElementById('mobilefeild').value;
-  // var adharNum = document.getElementById('AdharFeild').value;
   if (password !== confirmpassword) {
     alert("your password and confirmpassword is not matching ");
   }
-
-//   newRegistrationData = 
-
-  storeRegistrationData.push(new rangData(name,lastName,
-    email,
-    password,
-    confirmpassword,
-    address
+  storeRegistrationData.push(new rangData(name,lastName,email,password,confirmpassword,address
   ));
   // console.log(storeRegistrationData, "Array Data");
 
   localStorage.setItem("userData", JSON.stringify(storeRegistrationData));
-  // console.log(storeRegistrationData, "Array Data");
-  // window.location.href = "";
+  // console.log(storeRegistrationData, "Array Dat // window.location.href = "/login.html";a");
+  showLogin('/login.html');
 
   idOfRegistration++;
 };
