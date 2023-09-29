@@ -7,3 +7,4 @@ function showrpayment(url) {
         showpaymentPage.innerHTML = data;
       });
   }
+  

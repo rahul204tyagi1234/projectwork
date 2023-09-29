@@ -51,12 +51,3 @@ function showcontactus(url) {
       showcontactusPage.innerHTML = data;
     });
 }
-function showHomePage(url) {
-  const showHomePage = document.getElementById("all-pages");
-  // console.log();
-  fetch(url)
-    .then((res) => res.text())
-    .then((data) => {
-      showHomePage.innerHTML = data;
-    });
-}

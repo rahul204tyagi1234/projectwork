@@ -1,4 +1,4 @@
-
+window.history.forward();
 function userLogin() {
   var userEmail=document.getElementById("userEmail").value;
   var userPassword=document.getElementById("userPassword").value;

@@ -1,8 +1,7 @@
-const home = document.getElementById("all-pages");
-
-// fatch("")
-// .then((res) =>res.text())
-// .then((data)=>{
-//     console.log(data);
-//     home.innerHTML=data;
-// });
+const showHomePage = document.getElementById("all-pages");
+fetch("home.html")
+  .then((res) => res.text())
+  .then((data) => {
+    console.log(data);
+    showHomePage.innerHTML = data;
+  });

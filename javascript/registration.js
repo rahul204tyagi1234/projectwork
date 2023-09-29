@@ -12,7 +12,7 @@ function rangData(name, lastName, email, password, confirmpassword, address) {
     (this.isLogin = false);
 }
 
-createRegData = () => {
+function createRegData(){
   var name = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
   var email = document.getElementById("email").value;

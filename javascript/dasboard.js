@@ -1,4 +1,4 @@
-
+window.history.forward();
 function logOut() {
   let logOut = document.getElementById("logout");
   const allUserDataJSON = localStorage.getItem("userData");
