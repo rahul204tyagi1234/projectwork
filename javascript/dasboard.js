@@ -16,7 +16,7 @@ function logOut() {
           localStorage.setItem("userData", JSON.stringify(allUserData));
         }
 
-        window.location.href = "/home.html";
+        window.location.href = "/header.html";
       }
      
     }
