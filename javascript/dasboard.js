@@ -1,4 +1,21 @@
-window.history.forward();
+// window.history.forward();
+
+window.addEventListener("load", function () {
+  const allUserDataJSON = localStorage.getItem("userData");
+
+  if (allUserDataJSON) {
+    const userData = JSON.parse(allUserDataJSON);
+
+    const logOutData = userData.find(
+      (userData) => userData.isLogin === false
+    );
+
+    if (logOutData) {
+      window.location.href = "/header.html";
+    }
+  }
+});
+
 function logOut() {
   let logOut = document.getElementById("logout");
   const allUserDataJSON = localStorage.getItem("userData");
@@ -18,13 +35,14 @@ function logOut() {
 
         window.location.href = "/header.html";
       }
-     
+      
     }
      else {
       alert("false");
     }
   });
 }
+
 
 
 

@@ -18,9 +18,8 @@ function userLogin() {
           alert("Login successful");
           window.location.href = "dasboard.html";
         } else {
-          alert("your email is not matching , Please try again.");
+          alert("your data is not matching , Please try again.");
         }
       } 
-     
   }
   

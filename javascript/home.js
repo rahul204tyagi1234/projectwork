@@ -5,3 +5,4 @@ fetch("home.html")
     // console.log(data);
     showHomePage.innerHTML = data;
   });
+ 
