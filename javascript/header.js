@@ -1,53 +1,53 @@
-var cr1 = document.getElementById('cr-1')
-var cr2 = document.getElementById('cr-2')
-var cr3 = document.getElementById('cr-3')
+const navElement = document.getElementById("header");
 
-var arr=[cr1,cr2,cr3]
-// var arr = document.querySelectorAll(".carousel-item")
-// console.log('ar is :', crr);
-// console.log('ar is :', arr);
+fetch("header.html")
+  .then((res) => res.text())
+  .then((data) => {
+    navElement.innerHTML = data;
+  });
 
-var counter = 0
+setTimeout(() => {
+  const navbarToggle = document.getElementById("navbarToggle");
+  const navbarNav = document.getElementById("navbarNav");
+  navbarToggle.addEventListener("click", function () {
+    navbarNav.classList.toggle("show");
+  });
+}, 50);
 
-
-// function slideshow() {
-
-
-//     let slides = document.getElementsByClassName('carousel-indicators')
-//     console.log(slides);
+// function hideLogin() {
+//   var elm = document.getElementById("login");
+//   elm.classList.add("hideAnchor");
 // }
-// slideshow();
-arr.forEach(data => {
-    for (let index = 0; index < data; ) {
 
-    }
-})
-
-function showCurrentItem() {
-    arr.forEach((item, index) => {
-        if (counter === arr.length) {
-            counter = 0
-        }
-        if (index === counter) {
-            item.classList.add('active')
-        } else {
-            item.classList.remove('active')
-        }
-    })
-
-
-}
-setInterval(nextCrowsel, 5000)
-
-function nextCrowsel() {
-// console.log('crousel next',counter)
-    counter = (counter+1) % arr.length
-    showCurrentItem()
-
+function showLogin(url) {
+  const showLoginPage = document.getElementById("all-pages");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showLoginPage.innerHTML = data;
+    });
 }
 
-function backCrowsel() {
-    counter = (counter-1) % arr.length
-    showCurrentItem()
 
+function showregistration(url) {
+  const showRegistrationPage = document.getElementById("all-pages");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showRegistrationPage.innerHTML = data;
+    });
+    // document.getElementById("myBtn").disabled = true;
+    
+}
+
+function showcontactus(url) {
+  const showcontactusPage = document.getElementById("all-pages");
+  console.log();
+  fetch(url)
+    .then((res) => res.text())
+    .then((data) => {
+      showcontactusPage.innerHTML = data;
+    });
 }
