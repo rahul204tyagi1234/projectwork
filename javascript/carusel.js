@@ -1,17 +1,24 @@
+//
 fetch("/json/carusel.json")
 .then((res)=>res.json())
 .then((data)=>{
     const div=document.querySelector(".carousel-inner")
-    console.log("div",div);
+    // console.log("div",div);
+    // console.log('data is :',data)
     data.forEach((element) =>{
-        const div=document.createElement("div");
-        div.innerHTML=`<div id="cr-1" class="carousel-item active">${element.img}</div>
-        <div id="cr-2" class="carousel-item">${element.img}</div>
-        <div id="cr-3" class="carousel-item">${element.img}</div>`;
-        // div.appendChild(div);
-        console.log(element);
+        const img=document.createElement("div");
+        img.innerHTML=`
+        <img
+        src="${element.img}"
+        class="carousel-inner active"
+        alt="..."</br>
+      />`
+      // console.log(element);
+      div.appendChild(img);
     })
 })
+
+//
 
 
 
