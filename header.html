@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Page</title>
+    <!-- Add Bootstrap CSS link here -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <title>header</title>
+     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body style="background-color: rgb(215, 229, 229)">
-    <!-- Navbar Start  -->
-    <nav class="navbar fixed-top" style="background-color: rgb(170, 244, 244)">
+    <!-- <header id="header"></header> -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: rgb(170, 244, 244)"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="javascript:void(0)">
           <img
             src="img/STUDENT-PORTAL.png"
             alt=""
@@ -20,199 +23,40 @@
             height="50"
             class="d-inline-block"
           />
-          Student portal
+          <b>Student portal</b> 
         </a>
-
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="login.html"
-              >Login</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link me-md-3" href="contactus.html">Contact us</a>
-          </li>
-        </ul>
+        <button class="navbar-toggler" type="button" id="navbarToggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto" id="ul">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" onclick="showLogin('/login.html')">Login</a>
+            </li>
+            <li  class="nav-item">
+              <a id="registrationBtn" class="nav-link" href="javascript:void(0)" onclick="showregistration('/registration.html')">Registration</a>
+            </li>
+            <li  class="nav-item">
+              <a id="contact us" class="nav-link" href= "javascript:void(0)" onclick="showcontactus('/contactus.html')">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <br /><br /><br /><br />
-    <!-- Navbar End  -->
 
-    <div class="row">
-      <!-- Notifications Area Start  -->
-      <div class="col-md-3">
-        <div class="card" style="width: 25rem; height: 750px">
-          <div
-            class="card-header text-center"
-            style="background-color: rgb(170, 244, 244)"
-          >
-            <h5>Notifications</h5>
-          </div>
-
-          <marquee
-            behavior="scroll"
-            direction="up"
-            onmouseover="this.stop();"
-            onmouseout="this.start()"
-          >
-            <ul class="list-group list-grohup-flush">
-              <!-- <li class="list-group-item"></li>
-            <li class="list-group-item"></li> -->
-            </ul>
-            <!-- <ul class="list-group list-group-flush" id="result">             
-            </ul> -->
-          </marquee>
-        </div>
-        <!-- Notifications Area End  -->
-      </div>
-      <div class="col-md-9">
-        <div class="row">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <!-- <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div> -->
-            <div class="carousel-inner" style="max-width: 35cm ">
-               <!-- <div id="cr-1" class="carousel-item active">
-              <img
-                src="img/Screenshot from 2023-08-29 18-03-45.png"
-                class="carousel-inner"
-                alt="..."
-              />
-            </div>
-              <div id="cr-2" class="carousel-item">
-              <img
-                src="img/Screenshot from 2023-08-29 18-04-31.png"
-                class="carousel-inner"
-                alt="..."
-              />
-            </div>
-              <div id="cr-3" class="carousel-item">
-              <img
-                src="img/Screenshot from 2023-08-29 18-05-21.png"
-                class="carousel-inner"
-                alt="..."
-              />
-            </div> -->
-            </div>
-            <button
-              onclick="backCrowsel()"
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              onclick="nextCrowsel()"
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <br />
-        <div class="card mb-12" style="max-width: fit-content">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="img/Screenshot from 2023-08-29 16-44-45.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-
-        <div class="card mb-12" style="max-width: fit-content">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="img/Screenshot from 2023-08-29 16-46-42.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
-    </div>
-
-    <br /><br /><br /><br />
-
-    <!-- Footer Area Start  -->
-    <footer
-      class="text-center p-3 fixed-bottom"
-      style="background-color: rgb(170, 244, 244)"
-    >
-      @ 2023 Rahul Tyagi:
-      <a class="text-dark">Student portal</a>
-    </footer>
-    <!-- Footer Area End  -->
-    <!-- Javascript Script Start  -->
-    <script src="/javascript/carusel.js"></script>
+    <div id="all-pages"></div>
+    <footer id="footer"></footer>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/secondinformation.js"></script>
+    <script src="/javascript/information.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/carusel.js"></script>
     <script src="/javascript/notification.js"></script>
-    <script src="/javascript/header.js"></script>
-    <!-- Javascript Script End  -->
+    <script src="javascript/registration.js"></script> 
+    <script src="javascript/footer.js"></script>
   </body>
 </html>

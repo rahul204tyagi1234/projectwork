@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Dasboard</title>
+  </head>
+  <body style="background-color: rgb(215, 229, 229)">
+    <!-- navbar start -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: rgb(170, 244, 244)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img
+            src="img/STUDENT-PORTAL.png"
+            alt=""
+            width="50"
+            height="50"
+            class="d-inline-block"
+          />
+          <b>Student Dasboard</b> 
+        </a>
+    
+          <ul class="navbar-nav ml-auto" id="ul">
+    
+            <a class="nav-link " href="javascript:void(0)"  type="button" id="logout" onclick="logOut()"> <b>Logout</b></a>
+            <li id="login" class="nav-item">
+             
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+                 
+                
+            </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+    </nav>
+    <br /><br /><br /><br /><br />
+
+    <!-- Navbar End  -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: auto">
+            <div class="card-header text-center" style="background-color: rgb(170, 244, 244)"><b>Options</b></div>
+            <!-- <div id="show"> -->
+             <ul class="list-group list-group-flush">
+              <div id="show">
+              <li class="list-group-item active"> 
+                <a class="nav-link " href="javascript:void(0)" onclick="showCourses('/courses.html')">Courses</a>
+              </li>
+              <li class="list-group-item "> 
+                <a class="nav-link" href="javascript:void(0)" onclick="showProfile('/profile.html')">Profile</a>
+              </li>
+              <li class="list-group-item"> 
+                <a class="nav-link" href="javascript:void(0)" onclick="showrpayment('/payment.html')">Payment</a>
+              </li>
+              <li class="list-group-item"> 
+                <a class="nav-link" href="javascript:void(0)" onclick="showresult('/result.html')">Result</a>
+              </li>
+            </div>
+             </ul>
+          
+          </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card" style="width: auto">
+              <div class="card-header text-center " style="background-color: rgb(170, 244, 244)"><b>Dasboard</b></div>
+              <ul class="list-group list-group-flush">
+                <br>
+              <div id="profile"></div>
+              <br>
+              </ul>
+            </div>
+        </div>
+       </div>
+    </div>
+    <br><br><br>
+    <div
+    class="text-center p-3 fixed-bottom"
+    style="background-color: rgb(170, 244, 244)"
+    >
+    @ 2023 Rahul Tyagi:
+    <a class="text-dark">Student portal</a>
+    </div>
+    <script src="javascript/result.js"></script>
+    <script src="javascript/profile.js"></script>
+    <script src="javascript/payment.js"></script>
+    <script src="javascript/courses.js"></script>
+    <script src="javascript/result.js"></script>
+    <script src="javascript/dasboard.js"></script>
+    <script src="javascript/showProfile.js"></script>
+  </body>
+</html>

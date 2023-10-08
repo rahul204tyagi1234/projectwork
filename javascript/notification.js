@@ -1,5 +1,4 @@
 
-
 fetch("/json/notification.json")
   .then((res) => res.json())
   .then((data) => {
